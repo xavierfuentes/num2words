@@ -1,0 +1,35 @@
+{
+  "name": "num2words",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=build",
+    "dev": "webpack --progress --colors --watch --mode=dev",
+    "test": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xavifuefer/num2words.git"
+  },
+  "author": "Xavi Fuentes <xavifuefer@gmail.com> (https://github.com/xavifuefer)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xavifuefer/num2words/issues"
+  },
+  "homepage": "https://github.com/xavifuefer/num2words#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.10.4",
+    "babel-eslint": "^6.1.0",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.9.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.0.0",
+    "eslint-loader": "^1.4.0",
+    "mocha": "^2.5.3",
+    "webpack": "^1.13.1",
+    "yargs": "3.32.0"
+  }
+}

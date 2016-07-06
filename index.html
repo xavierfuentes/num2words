@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Numbers to Words test</title>
+</head>
+<body>
+
+  <h1>Type in a number</h1>
+  <input type="number" id="input">
+  <span>The number in words is: </span><strong id="result"></strong>
+  <div><button id="action">Convert</button></div>
+
+  <script src="./lib/num2words.min.js"></script>
+  <script>
+    var i = document.getElementById('input');
+    var r = document.getElementById('result');
+    var b = document.getElementById('action');
+
+    b.onclick = function() {
+      r.innerText = NumbersToWords.convert(i.value)
+    }
+  </script>
+</body>
+</html>
